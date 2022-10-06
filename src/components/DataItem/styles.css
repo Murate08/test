@@ -1,0 +1,97 @@
+.job-item {
+  background: var(--color-box-base);
+  border: 1px solid var(--color-line-in-white);
+  border-bottom: none;
+
+  margin-top: 2.4rem;
+  overflow: hidden;
+  padding: 4rem 2.4rem;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+.deleteIcon{
+  width: 25px;
+  height: 25px;
+}
+
+
+
+
+.job-item header {
+  
+  padding: 3.2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.job-item header img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.job-item header div {
+  margin-left: 2.4rem;
+}
+
+.job-item header div strong {
+  font: 700 2.4rem Archivo;
+  display: block;
+  color: var(--color-text-title);
+}
+
+.job-item header div span {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.job-item > p {
+  padding: 0 2rem;
+  line-height: 2.8rem;
+}
+
+
+@media (min-width: 700px) {
+
+ 
+
+  .job-item > p {
+    padding: 0 3.2rem;
+  }
+
+
+
+
+
+}
+
+.card{
+  
+  margin-top: 5rem;
+}
+
+
+
+footer {
+  padding: 4rem 2.4rem;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+  
+}
+
+#page-job-form main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--color-secundary);
+  padding: 0 2rem;
+}
+
+
+
+
+
+ 

@@ -1,0 +1,105 @@
+#page-landing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-in-primary);
+  background: linear-gradient(to right, #b78fc1 0%, #8d619e 100%);
+}
+
+#page-landing p{
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 15%;
+  margin-top: 5rem;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.buttons-container a {
+  width: 25rem;
+  height: 8.4rem;
+  border-radius: 0.8rem;
+  font: 700 2.0rem Archivo; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-button-text);
+  transition: background-color 0.2s;
+}
+
+.buttons-container a:first-child {
+  margin-right: 1.6rem;
+}
+
+.buttons-container a.findContact {
+  background: #b78fc1;
+  border:  2.5px solid  var(--color-secundary);
+  color:#fff;
+}
+
+.buttons-container a.add-contact {
+  background: var(--color-secundary);
+}
+
+.buttons-container a.findContact:hover {
+  background: #211c1f;
+  color: #e1d6dd;
+}
+
+.buttons-container a.add-contact:hover {
+  background: #e1d6dd;
+  border:2px solid var(--color-secundary);
+  color: #211c1f;
+}
+
+.buttons-container a img {
+  margin-right: 2.4rem;
+}
+
+@media (min-width: 1100px) {
+  #page-landing-content {
+    max-width: 1100px;
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+      "logo hero hero"
+      "buttons buttons total"
+    ;
+  }
+
+  .logo-container {
+    grid-area: logo;
+    align-self: center;
+    text-align: left;
+    margin: 0;
+  }
+
+  .logo-container h2 {
+    text-align: initial;
+    font-size: 3.6rem;
+  }
+
+  .hero-image {
+    grid-area: hero;
+    justify-self: end;
+  }
+
+  .buttons-container {
+    grid-area: buttons;
+    
+  }
+
+  .buttons-container a {
+    font-size: 1.8rem;
+  }
+}
